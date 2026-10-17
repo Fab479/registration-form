@@ -9,7 +9,7 @@
 <body>
     <!--Registration form-->
     <main>
-        <div>
+        <div class="hero">
             <!--left side photo and welcome text-->
         <aside class="welcome">
             <h1>welcome</h1>
@@ -20,38 +20,66 @@
                 <li>Learn at your pace</li>
                 <li>Join a friendly community</li>
             </ul>
-        </aside>/.welcome
+        </aside>
         <section>
             <h1>Create account</h1>
             <p>Fill in your details to register</p>
             <!--form-->
             <form>
                 <div class="row">
+                    <div class="name">
                     <div class="field">
                     <label for="firstname">Firstname</label>
-                    <input type="text" id="firstname" required>
+                    <input type="text" id="firstname" placeholder="Olamide" required>
                     </div>
+                    
 
                     <div class="field">
                         <label for="lastname">Lastname</label>
-                        <input type="text" id="lastname" required>
+                        <input type="text" id="lastname" placeholder="Johnson" required>
+                    </div>
                     </div>
 
                     <div class="field">
-                        <label for="email">Email <address></address></label>
-                        <input type="text" id="email" required>
+                        <label for="email">Email:<address></address></label>
+                        <input type="email" id="email" placeholder="example@info.ng" required>
                     </div>
 
                     <div class="field">
-                        <label for="phone">Phone number</label>
-                        <input type="tel" id="phone" required>
+                        <label for="phone">Phone number:</label><br>
+                        <input type="tel" id="phone" placeholder="08012345678" required>
                     </div>
 
                     <div class="field">
-                        <label for="dob">D.O.B</label>
+                        <label for="dob">D.O.B</label><br>
                         <input type="date" id="date" required>
                     </div>
+
+                    <div class="field">
+                        <label for="gender">
+                            <input type="radio" id="gender">
+                            Male
+                        </label>
+                        <label for="gender">
+                            <input type="radio" id="gender">
+                            Female
+                        </label>
+                    </div>
+                    <div class="field">
+                        <select name="course" id="course">
+                            <option value="">Select course</option>
+                            <option value="front">Frontend development</option>
+                            <option value="back">Backend development</option>
+                            <option value="cyber">Cyber Security</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <input type="checkbox" id="check">
+                        <span>I agree to the <a href="term">Terms and Condition</a></span>
+                    </div>
                 </div>
+                <button type="submit">Submit</button>
             </form>
         </section>
         </div>

@@ -1,10 +1,30 @@
 body{
-    
     margin: 0 auto;
-    
-    
+    /*margin-left: 10px;*/
 }
-main{
-   display: flex;
-   flex-direction: column;
+.hero{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+aside{
+    background-color: blue;
+    color: white;
+    padding: 25px 40px;
+    height: 70vh;
+}
+form{
+    line-height: 30px;
+}
+.name{
+    display: flex;
+    gap: 5px;
+}
+input{
+    max-width: 1200px;
+}
+li{
+    list-style-type: square;
 }
